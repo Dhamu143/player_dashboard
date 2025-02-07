@@ -22,7 +22,7 @@ const AppSidebar = () => {
       }}
     >
       <CSidebarHeader className="border-bottom">
-        <CCardHeader className="fs-4 fw-bolder text-info">ADMIN PANEL</CCardHeader>
+        <CCardHeader className="fs-4 fw-bolder text-info">PLAYER</CCardHeader>
         <CCloseButton
           className="d-lg-none"
           dark
