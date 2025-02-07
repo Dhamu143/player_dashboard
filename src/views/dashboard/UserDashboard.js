@@ -58,7 +58,7 @@ const UserDashboard = () => {
       tooltip: {
         y: {
           formatter: function (val) {
-            return val + ' Total alerts'
+            return val + ' Total Deposits '
           },
         },
       },
@@ -118,7 +118,7 @@ const UserDashboard = () => {
       tooltip: {
         y: {
           formatter: function (val) {
-            return val + ' Total alerts'
+            return val + ' Total Withdrawal'
           },
         },
       },
@@ -161,7 +161,7 @@ const UserDashboard = () => {
         ))}
       </CRow>
       <CRow className="g-4">
-        <CCol xs={12} sm={6} className="mb-4">
+        <CCol xs={12} md={6} lg={6} className="mb-4">
           <CCard className="d-flex flex-column h-100">
             <CCardHeader>AML Risk Score</CCardHeader>
             <CCardBody className="flex-grow-1 d-flex">
@@ -195,7 +195,7 @@ const UserDashboard = () => {
             </CCardBody>
           </CCard>
         </CCol>
-        <CCol xs={12} sm={6} className="mb-4">
+        <CCol xs={12} md={6} lg={6} className="mb-4">
           <CCard className="d-flex flex-column h-100">
             <CCardHeader>SG Risk Score</CCardHeader>
             <CCardBody className="flex-grow-1 d-flex">
