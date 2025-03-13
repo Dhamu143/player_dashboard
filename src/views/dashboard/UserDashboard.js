@@ -494,60 +494,52 @@ const UserDashboard = () => {
               /> */}
               <CChartLine
                 data={{
-                  labels: ['Low', 'Medium', 'High'],
+                  labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
                   datasets: [
                     {
-                      label: 'Risk Score',
-                      data: [87334, 0, 0],
-                      borderColor: 'green',
-                      borderWidth: 3,
-                      fill: false,
-                      pointRadius: 6,
-                      pointHoverRadius: 8,
-                      pointBackgroundColor: 'green',
-                    },
-                    {
-                      label: 'Medium',
-                      data: [0, 0, 0],
-                      borderColor: 'orange',
-                      borderWidth: 3,
+                      label: 'Customers score',
+                      data: [5, 8, 15, 30, 45, 60, 75, 90, 120, 150, 180],
+                      borderColor: 'black',
+                      borderWidth: 2,
                       fill: false,
                       pointRadius: 0,
+                      pointHoverRadius: 0,
                     },
                     {
                       label: 'High',
-                      data: [0, 0, 0],
+                      data: Array(11).fill(140),
                       borderColor: 'red',
-                      borderWidth: 3,
+                      borderWidth: 2,
                       fill: false,
                       pointRadius: 0,
+                      pointHoverRadius: 0,
+                    },
+                    {
+                      label: 'Medium',
+                      data: Array(11).fill(80),
+                      borderColor: 'yellow',
+                      borderWidth: 2,
+                      fill: false,
+                      pointRadius: 0,
+                      pointHoverRadius: 0,
+                    },
+                    {
+                      label: 'Low',
+                      data: Array(11).fill(40),
+                      borderColor: 'green',
+                      borderWidth: 2,
+                      fill: false,
+                      pointRadius: 0,
+                      pointHoverRadius: 0,
                     },
                   ],
                 }}
                 options={{
-                  responsive: true,
-                  plugins: {
-                    legend: {
-                      display: true,
-                      position: 'top',
-                      labels: {
-                        usePointStyle: true,
-                      },
-                    },
-                    tooltip: {
-                      enabled: true,
-                      callbacks: {
-                        label: function (tooltipItem) {
-                          return ` ${tooltipItem.raw}`
-                        },
-                      },
-                    },
-                  },
                   scales: {
                     y: {
                       beginAtZero: true,
                       ticks: {
-                        stepSize: 20000,
+                        stepSize: 20,
                       },
                     },
                   },
